@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image: url('../assets/fondo_fci.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
+}
+header.encabezado {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+}
+.logo-superior {
+  width: 90px;
+  height: auto;
+}
+.content {
+  background-color: rgba(255,255,255,0.6);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+p.intro {
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 16px;
+}
+label, select, input, textarea {
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+  font-size: 16px;
+}
+.button-container {
+  text-align: center;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #0055a5;
+}
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  background-color: rgba(255,255,255,0.85);
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 2px solid #ccc;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}

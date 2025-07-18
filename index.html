@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reserva de Laboratorios - Facultad de Ciencias de la Información</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="libs/xlsx.full.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="encabezado">
+  <img src="assets/logo_fci.jpg" alt="Logo FCI" class="logo-superior">
+  <h1>Facultad de Ciencias de la Información</h1>
+</header>
+
+<div class="content">
+  <h2>Solicitud de Reserva de Laboratorios</h2>
+  <p class="intro">
+    Esta página ha sido desarrollada con el propósito de facilitar la gestión institucional y asegurar un uso adecuado, eficiente y ordenado de los laboratorios pertenecientes a la Facultad de Ciencias de la Información. Está dirigida a profesores e investigadores de la facultad, promoviendo la transparencia, el control administrativo y la mejora continua en la asignación de espacios académicos y tecnológicos.
+  </p>
+  <form id="formularioReserva">
+    <label for="profesor">Nombre del Profesor:</label>
+    <input type="text" id="profesor" required>
+
+    <label for="correoProfesor">Correo institucional del profesor:</label>
+    <input type="email" id="correoProfesor" required>
+
+    <label for="materia">Materia:</label>
+    <input type="text" id="materia" required>
+
+    <label for="laboratorio">Selecciona el laboratorio:</label>
+    <select id="laboratorio" required>
+      <option value="Laboratorio de Cómputo LGI">Laboratorio de Cómputo LGI</option>
+      <option value="Laboratorio de Cómputo LGDyA">Laboratorio de Cómputo LGDyA</option>
+      <option value="Laboratorio de Reprografía">Laboratorio de Reprografía</option>
+      <option value="Laboratorio de procesos técnicos">Laboratorio de procesos técnicos</option>
+      <option value="Laboratorio de Conservación y Restauración">Laboratorio de Conservación y Restauración</option>
+    </select>
+
+    <label for="fecha">Fecha de uso:</label>
+    <input type="date" id="fecha" required>
+
+    <label for="hora">Hora de uso:</label>
+    <input type="time" id="hora" required>
+
+    <label for="asunto">Asunto del correo:</label>
+    <input type="text" id="asunto" required>
+
+    <label for="mensaje">Mensaje del correo:</label>
+    <textarea id="mensaje" rows="6" required></textarea>
+
+    <div class="button-container">
+      <button type="button" onclick="enviarCorreo()">Enviar solicitud</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Facultad de Ciencias de la Información - UASLP. Todos los derechos reservados.</p>
+  <p>Contacto institucional: <a href="mailto:secretaria.academica@fci.uaslp.mx">secretaria.academica@fci.uaslp.mx</a> | Teléfono: (444) 832-1000 Ext. 9029</p>
+  <p>Esta página fue creada por el Doctor Carlos Cuevas con fines institucionales.</p>
+</footer>
+</body>
+</html>
